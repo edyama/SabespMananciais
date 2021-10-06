@@ -10,4 +10,7 @@ import Foundation
 struct NameComponents {
     let capacidadeText = "Capacidade (%)"
     let sistemaError = "Sistema não identificado"
+    let rainDay = "Chuva dia (mm):"
+    let rainMonth = "Chuva mês (mm):"
+    let rainAvg = "Chuva média (mm):"
 }

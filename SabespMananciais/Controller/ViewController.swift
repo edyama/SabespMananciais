@@ -14,6 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet var sistemaLabel: UILabel!
     @IBOutlet var capacidadeLabel: UILabel!
     @IBOutlet var volumeLabel: UILabel!
+    @IBOutlet var rainDayLabel: UILabel!
+    @IBOutlet var rainDayData: UILabel!
+    @IBOutlet var rainMonthLabel: UILabel!
+    @IBOutlet var rainMonthData: UILabel!
+    @IBOutlet var rainAvgLabel: UILabel!
+    @IBOutlet var rainAvgData: UILabel!
     @IBOutlet var pickerView: UIPickerView!
     
     let nameComponents = NameComponents()
@@ -32,6 +38,9 @@ class ViewController: UIViewController {
         mananciais.delegate = self
         
         capacidadeLabel.text = nameComponents.capacidadeText
+        rainDayLabel.text = nameComponents.rainDay
+        rainMonthLabel.text = nameComponents.rainMonth
+        rainAvgLabel.text = nameComponents.rainAvg
     }
 }
 
@@ -67,6 +76,9 @@ extension ViewController: ManancialManagerDelegate {
         DispatchQueue.main.async {
             self.sistemaLabel.text = manancial.mananciais[self.intRowManancial].name
             self.volumeLabel.text = manancial.mananciais[self.intRowManancial].data[0].value
+            self.rainDayData.text = manancial.mananciais[self.intRowManancial].data[1].value
+            self.rainMonthData.text = manancial.mananciais[self.intRowManancial].data[2].value
+            self.rainAvgData.text = manancial.mananciais[self.intRowManancial].data[3].value
         }
     }
     
