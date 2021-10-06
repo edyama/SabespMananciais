@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C406E09E270DE47C007CB9C3 /* MananciaisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406E09D270DE47C007CB9C3 /* MananciaisModel.swift */; };
 		C49CF948270C8CBA00CEC343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49CF947270C8CBA00CEC343 /* AppDelegate.swift */; };
 		C49CF94A270C8CBA00CEC343 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49CF949270C8CBA00CEC343 /* SceneDelegate.swift */; };
 		C49CF94C270C8CBA00CEC343 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49CF94B270C8CBA00CEC343 /* ViewController.swift */; };
 		C49CF94F270C8CBA00CEC343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49CF94D270C8CBA00CEC343 /* Main.storyboard */; };
 		C49CF951270C8CBD00CEC343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49CF950270C8CBD00CEC343 /* Assets.xcassets */; };
 		C49CF954270C8CBD00CEC343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49CF952270C8CBD00CEC343 /* LaunchScreen.storyboard */; };
+		C49CF95F270C8DA700CEC343 /* MananciaisData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49CF95E270C8DA700CEC343 /* MananciaisData.swift */; };
+		C49CF961270C8DB700CEC343 /* MananciaisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49CF960270C8DB700CEC343 /* MananciaisManager.swift */; };
+		C49CF963270C8DF700CEC343 /* NameComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49CF962270C8DF700CEC343 /* NameComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C406E09D270DE47C007CB9C3 /* MananciaisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MananciaisModel.swift; sourceTree = "<group>"; };
 		C49CF944270C8CBA00CEC343 /* SabespMananciais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SabespMananciais.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49CF947270C8CBA00CEC343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C49CF949270C8CBA00CEC343 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		C49CF950270C8CBD00CEC343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C49CF953270C8CBD00CEC343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C49CF955270C8CBD00CEC343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49CF95E270C8DA700CEC343 /* MananciaisData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MananciaisData.swift; sourceTree = "<group>"; };
+		C49CF960270C8DB700CEC343 /* MananciaisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MananciaisManager.swift; sourceTree = "<group>"; };
+		C49CF962270C8DF700CEC343 /* NameComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				C49CF947270C8CBA00CEC343 /* AppDelegate.swift */,
 				C49CF949270C8CBA00CEC343 /* SceneDelegate.swift */,
-				C49CF94B270C8CBA00CEC343 /* ViewController.swift */,
-				C49CF94D270C8CBA00CEC343 /* Main.storyboard */,
+				C49CF95B270C8D2500CEC343 /* Model */,
+				C49CF95C270C8D3000CEC343 /* View */,
+				C49CF95D270C8D4700CEC343 /* Controller */,
 				C49CF950270C8CBD00CEC343 /* Assets.xcassets */,
 				C49CF952270C8CBD00CEC343 /* LaunchScreen.storyboard */,
 				C49CF955270C8CBD00CEC343 /* Info.plist */,
+				C49CF962270C8DF700CEC343 /* NameComponents.swift */,
 			);
 			path = SabespMananciais;
+			sourceTree = "<group>";
+		};
+		C49CF95B270C8D2500CEC343 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C49CF95E270C8DA700CEC343 /* MananciaisData.swift */,
+				C49CF960270C8DB700CEC343 /* MananciaisManager.swift */,
+				C406E09D270DE47C007CB9C3 /* MananciaisModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C49CF95C270C8D3000CEC343 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C49CF94D270C8CBA00CEC343 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C49CF95D270C8D4700CEC343 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C49CF94B270C8CBA00CEC343 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49CF963270C8DF700CEC343 /* NameComponents.swift in Sources */,
 				C49CF94C270C8CBA00CEC343 /* ViewController.swift in Sources */,
+				C49CF95F270C8DA700CEC343 /* MananciaisData.swift in Sources */,
+				C49CF961270C8DB700CEC343 /* MananciaisManager.swift in Sources */,
 				C49CF948270C8CBA00CEC343 /* AppDelegate.swift in Sources */,
+				C406E09E270DE47C007CB9C3 /* MananciaisModel.swift in Sources */,
 				C49CF94A270C8CBA00CEC343 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
