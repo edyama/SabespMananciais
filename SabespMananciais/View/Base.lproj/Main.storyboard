@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpD-fv-n0e">
-                                <rect key="frame" x="20" y="84" width="374" height="423"/>
+                                <rect key="frame" x="20" y="84" width="374" height="361.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7x-3J-OO3">
                                         <rect key="frame" x="20" y="20" width="334" height="39"/>
@@ -36,38 +36,38 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5k-W9-Shm">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5k-W9-Shm">
                                         <rect key="frame" x="20" y="217" width="47" height="21.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi9-yf-Fvg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi9-yf-Fvg">
                                         <rect key="frame" x="20" y="258.5" width="47" height="21.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQo-IF-55L">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQo-IF-55L">
                                         <rect key="frame" x="307" y="217" width="47" height="21.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YD-2M-NaA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YD-2M-NaA">
                                         <rect key="frame" x="307" y="258.5" width="47" height="21.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVV-7T-Uze">
-                                        <rect key="frame" x="20" y="320" width="334" height="21.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVV-7T-Uze">
+                                        <rect key="frame" x="20" y="300" width="47" height="21.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4P-NF-ZLe">
-                                        <rect key="frame" x="20" y="361.5" width="334" height="21.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4P-NF-ZLe">
+                                        <rect key="frame" x="307" y="300" width="47" height="21.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -77,28 +77,28 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="a1a-6c-58P" secondAttribute="trailing" constant="20" id="7vL-eU-opB"/>
                                     <constraint firstItem="n7x-3J-OO3" firstAttribute="top" secondItem="fpD-fv-n0e" secondAttribute="top" constant="20" id="9by-RL-bFv"/>
-                                    <constraint firstItem="CVV-7T-Uze" firstAttribute="top" secondItem="yi9-yf-Fvg" secondAttribute="bottom" constant="40" id="Cv4-t4-aLe"/>
+                                    <constraint firstItem="CVV-7T-Uze" firstAttribute="leading" secondItem="fpD-fv-n0e" secondAttribute="leading" constant="20" id="CuR-Gx-Du5"/>
                                     <constraint firstItem="a1a-6c-58P" firstAttribute="leading" secondItem="fpD-fv-n0e" secondAttribute="leading" constant="20" id="DJo-EY-Lxy"/>
                                     <constraint firstItem="5YD-2M-NaA" firstAttribute="top" secondItem="DQo-IF-55L" secondAttribute="bottom" constant="20" id="HQu-du-gMH"/>
                                     <constraint firstItem="5YD-2M-NaA" firstAttribute="leading" secondItem="DQo-IF-55L" secondAttribute="leading" id="JmN-Ud-Cnp"/>
                                     <constraint firstItem="yi9-yf-Fvg" firstAttribute="leading" secondItem="fpD-fv-n0e" secondAttribute="leading" constant="20" id="LJJ-as-h3b"/>
-                                    <constraint firstItem="U4P-NF-ZLe" firstAttribute="top" secondItem="CVV-7T-Uze" secondAttribute="bottom" constant="20" id="Lgj-pz-SFg"/>
                                     <constraint firstItem="HDS-Z8-RaV" firstAttribute="top" secondItem="a1a-6c-58P" secondAttribute="bottom" constant="20" id="STy-x3-uMb"/>
-                                    <constraint firstAttribute="trailing" secondItem="CVV-7T-Uze" secondAttribute="trailing" constant="20" id="SXQ-es-iJG"/>
-                                    <constraint firstItem="CVV-7T-Uze" firstAttribute="leading" secondItem="fpD-fv-n0e" secondAttribute="leading" constant="20" id="Sz0-qK-vaK"/>
                                     <constraint firstItem="DQo-IF-55L" firstAttribute="top" secondItem="HDS-Z8-RaV" secondAttribute="bottom" constant="40" id="T1d-sh-fG4"/>
-                                    <constraint firstAttribute="bottom" secondItem="U4P-NF-ZLe" secondAttribute="bottom" constant="40" id="XDg-84-8pz"/>
+                                    <constraint firstAttribute="trailing" secondItem="5YD-2M-NaA" secondAttribute="trailing" constant="20" id="TiU-P0-tlU"/>
                                     <constraint firstItem="n7x-3J-OO3" firstAttribute="leading" secondItem="fpD-fv-n0e" secondAttribute="leading" constant="20" id="ZNu-2H-Fzr"/>
                                     <constraint firstItem="HDS-Z8-RaV" firstAttribute="leading" secondItem="fpD-fv-n0e" secondAttribute="leading" constant="20" id="azn-hd-CNl"/>
                                     <constraint firstItem="yi9-yf-Fvg" firstAttribute="top" secondItem="W5k-W9-Shm" secondAttribute="bottom" constant="20" id="bHc-vy-hLF"/>
                                     <constraint firstItem="W5k-W9-Shm" firstAttribute="leading" secondItem="fpD-fv-n0e" secondAttribute="leading" constant="20" id="bO5-BH-LlZ"/>
+                                    <constraint firstItem="U4P-NF-ZLe" firstAttribute="top" secondItem="5YD-2M-NaA" secondAttribute="bottom" constant="20" id="bRT-9U-a6W"/>
+                                    <constraint firstItem="CVV-7T-Uze" firstAttribute="top" secondItem="yi9-yf-Fvg" secondAttribute="bottom" constant="20" id="dYX-Ad-2ha"/>
                                     <constraint firstAttribute="trailing" secondItem="n7x-3J-OO3" secondAttribute="trailing" constant="20" id="gzU-8G-LzY"/>
+                                    <constraint firstAttribute="bottom" secondItem="CVV-7T-Uze" secondAttribute="bottom" constant="40" id="htV-mp-bMw"/>
                                     <constraint firstAttribute="trailing" secondItem="HDS-Z8-RaV" secondAttribute="trailing" constant="20" id="k1H-1y-Teo"/>
                                     <constraint firstItem="W5k-W9-Shm" firstAttribute="top" secondItem="HDS-Z8-RaV" secondAttribute="bottom" constant="40" id="k93-kq-92E"/>
+                                    <constraint firstAttribute="bottom" secondItem="U4P-NF-ZLe" secondAttribute="bottom" constant="40" id="lmV-nq-duK"/>
                                     <constraint firstItem="a1a-6c-58P" firstAttribute="top" secondItem="n7x-3J-OO3" secondAttribute="bottom" constant="40" id="m42-ac-Vpc"/>
-                                    <constraint firstItem="U4P-NF-ZLe" firstAttribute="leading" secondItem="fpD-fv-n0e" secondAttribute="leading" constant="20" id="nw8-Qy-dun"/>
-                                    <constraint firstAttribute="trailing" secondItem="U4P-NF-ZLe" secondAttribute="trailing" constant="20" id="o2p-6C-uuu"/>
                                     <constraint firstAttribute="trailing" secondItem="DQo-IF-55L" secondAttribute="trailing" constant="20" id="otf-iG-EHs"/>
+                                    <constraint firstAttribute="trailing" secondItem="U4P-NF-ZLe" secondAttribute="trailing" constant="20" id="un7-YP-Qdh"/>
                                 </constraints>
                             </view>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLg-kV-ap4">
@@ -124,10 +124,10 @@
                         <outlet property="pickerView" destination="tLg-kV-ap4" id="knF-Qh-Oqo"/>
                         <outlet property="rainAvgData" destination="U4P-NF-ZLe" id="uvA-CS-MQv"/>
                         <outlet property="rainAvgLabel" destination="CVV-7T-Uze" id="ayZ-cx-g2F"/>
-                        <outlet property="rainDayData" destination="yi9-yf-Fvg" id="sVl-a6-gZb"/>
+                        <outlet property="rainDayData" destination="DQo-IF-55L" id="P5b-Fx-HFX"/>
                         <outlet property="rainDayLabel" destination="W5k-W9-Shm" id="a1p-Nd-ft7"/>
-                        <outlet property="rainMonthData" destination="5YD-2M-NaA" id="wjY-r2-vmf"/>
-                        <outlet property="rainMonthLabel" destination="DQo-IF-55L" id="3xH-g2-feM"/>
+                        <outlet property="rainMonthData" destination="5YD-2M-NaA" id="U3s-L8-egj"/>
+                        <outlet property="rainMonthLabel" destination="yi9-yf-Fvg" id="B71-FR-3jr"/>
                         <outlet property="sistemaLabel" destination="n7x-3J-OO3" id="7xH-Xv-cRB"/>
                         <outlet property="volumeLabel" destination="HDS-Z8-RaV" id="YOD-jq-XkD"/>
                     </connections>

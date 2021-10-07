@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     let nameComponents = NameComponents()
     let numberOfComponents = 1
     
-    var mananciais = MananciaisManager()
+    var mananciaisManager = MananciaisManager()
     var intRowManancial = 0
     
     // MARK: - Methods
@@ -35,12 +35,33 @@ class ViewController: UIViewController {
         
         pickerView.dataSource = self
         pickerView.delegate = self
-        mananciais.delegate = self
+        mananciaisManager.delegate = self
         
+        labelTextSetup()
+        setupAcessibility()
+    }
+    
+    func labelTextSetup() {
         capacidadeLabel.text = nameComponents.capacidadeText
         rainDayLabel.text = nameComponents.rainDay
         rainMonthLabel.text = nameComponents.rainMonth
         rainAvgLabel.text = nameComponents.rainAvg
+    }
+    
+    func setupAcessibility() {
+        sistemaLabel.accessibilityLabel = "\(nameComponents.sistemaAccessibility) é \(mananciaisManager.sistemas[intRowManancial])"
+        sistemaLabel.accessibilityTraits = .header
+        
+        capacidadeLabel.accessibilityLabel = nameComponents.capacidadeAccessibility
+        rainDayLabel.accessibilityLabel = nameComponents.rainDayAccessibility
+        rainMonthLabel.accessibilityLabel = nameComponents.rainMonthAccessibility
+        rainAvgLabel.accessibilityLabel = nameComponents.rainAvgAccessibility
+        
+        pickerView.isAccessibilityElement = true
+        pickerView.accessibilityLabel = nameComponents.pickerViewAccessibility
+        pickerView.accessibilityHint = nameComponents.pickerViewAccessibilityHint
+        
+        UIAccessibility.post(notification: .screenChanged, argument: pickerView)
     }
 }
 
@@ -52,7 +73,7 @@ extension ViewController: UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return mananciais.sistemas.count
+        return mananciaisManager.sistemas.count
     }
 }
 
@@ -60,12 +81,13 @@ extension ViewController: UIPickerViewDataSource {
 
 extension ViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return mananciais.sistemas[row]
+        return mananciaisManager.sistemas[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         intRowManancial = row
-        mananciais.requestURL()
+        mananciaisManager.requestURL()
+        setupAcessibility()
     }
 }
 
