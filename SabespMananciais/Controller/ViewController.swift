@@ -26,7 +26,6 @@ class ViewController: UIViewController {
     let numberOfComponents = 1
     
     var mananciaisManager = MananciaisManager()
-    var intRowManancial = 0
     
     // MARK: - Methods
     
@@ -39,7 +38,7 @@ class ViewController: UIViewController {
         
         mananciaisManager.requestURL(at: 0)
         labelTextSetup()
-        setupAcessibility()
+        setupAcessibility(at: 0)
     }
     
     func labelTextSetup() {
@@ -49,8 +48,8 @@ class ViewController: UIViewController {
         rainAvgLabel.text = nameComponents.rainAvg
     }
     
-    func setupAcessibility() {
-        sistemaLabel.accessibilityLabel = "\(nameComponents.sistemaAccessibility) \(mananciaisManager.sistemas[intRowManancial])"
+    func setupAcessibility(at row: Int) {
+        sistemaLabel.accessibilityLabel = "\(nameComponents.sistemaAccessibility) \(mananciaisManager.sistemas[row])"
         sistemaLabel.accessibilityTraits = .header
         
         capacidadeLabel.accessibilityLabel = nameComponents.capacidadeAccessibility
@@ -86,9 +85,8 @@ extension ViewController: UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        intRowManancial = row
         mananciaisManager.requestURL(at: row)
-        setupAcessibility()
+        setupAcessibility(at: row)
     }
 }
 
