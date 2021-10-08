@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         pickerView.delegate = self
         mananciaisManager.delegate = self
         
+        mananciaisManager.requestURL(at: 0)
         labelTextSetup()
         setupAcessibility()
     }
@@ -49,7 +50,7 @@ class ViewController: UIViewController {
     }
     
     func setupAcessibility() {
-        sistemaLabel.accessibilityLabel = "\(nameComponents.sistemaAccessibility) é \(mananciaisManager.sistemas[intRowManancial])"
+        sistemaLabel.accessibilityLabel = "\(nameComponents.sistemaAccessibility) \(mananciaisManager.sistemas[intRowManancial])"
         sistemaLabel.accessibilityTraits = .header
         
         capacidadeLabel.accessibilityLabel = nameComponents.capacidadeAccessibility
@@ -86,7 +87,7 @@ extension ViewController: UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         intRowManancial = row
-        mananciaisManager.requestURL()
+        mananciaisManager.requestURL(at: row)
         setupAcessibility()
     }
 }
@@ -96,11 +97,11 @@ extension ViewController: UIPickerViewDelegate {
 extension ViewController: ManancialManagerDelegate {
     func didUpdateVolume(_ manancialManager: MananciaisManager, manancial: MananciaisModel) {
         DispatchQueue.main.async {
-            self.sistemaLabel.text = manancial.mananciais[self.intRowManancial].name
-            self.volumeLabel.text = manancial.mananciais[self.intRowManancial].data[0].value
-            self.rainDayData.text = manancial.mananciais[self.intRowManancial].data[1].value
-            self.rainMonthData.text = manancial.mananciais[self.intRowManancial].data[2].value
-            self.rainAvgData.text = manancial.mananciais[self.intRowManancial].data[3].value
+            self.sistemaLabel.text = manancial.name
+            self.volumeLabel.text = manancial.volume
+            self.rainDayData.text = manancial.rainDay
+            self.rainMonthData.text = manancial.rainMonth
+            self.rainAvgData.text = manancial.rainAvg
         }
     }
     

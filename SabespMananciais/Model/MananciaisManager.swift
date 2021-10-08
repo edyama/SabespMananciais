@@ -21,7 +21,7 @@ struct MananciaisManager {
     
     var delegate: ManancialManagerDelegate?
     
-    func requestURL() {
+    func requestURL(at row: Int) {
         guard let url = URL(string: mananciaisURL) else { return }
         
         let session = URLSession(configuration: .default)
@@ -33,7 +33,7 @@ struct MananciaisManager {
             }
             
             if let safeData = data {
-                if let manancial = parseJSON(with: safeData) {
+                if let manancial = parseJSON(with: safeData, at: row) {
                     delegate?.didUpdateVolume(self, manancial: manancial)
                 }
             }
@@ -42,14 +42,24 @@ struct MananciaisManager {
         task.resume()
     }
     
-    func parseJSON(with data: Data) -> MananciaisModel? {
+    func parseJSON(with data: Data, at row: Int) -> MananciaisModel? {
         let decoder = JSONDecoder()
         
         do {
             let decodedData = try decoder.decode([MananciaisData].self, from: data)
-            let dadosMananciais = decodedData
+            let name = decodedData[row].name
+            let volume = decodedData[row].data[0].value
+            let rainDay = decodedData[row].data[1].value
+            let rainMonth = decodedData[row].data[2].value
+            let rainAvg = decodedData[row].data[3].value
             
-            let mananciais = MananciaisModel(mananciais: dadosMananciais)
+            let mananciais = MananciaisModel(
+                name: name,
+                volume: volume,
+                rainDay: rainDay,
+                rainMonth: rainMonth,
+                rainAvg: rainAvg
+            )
             return mananciais
         } catch {
             delegate?.didFailWithError(error: error)

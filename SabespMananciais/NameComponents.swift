@@ -14,7 +14,7 @@ struct NameComponents {
     let rainMonth = "Chuva mês (mm):"
     let rainAvg = "Chuva média (mm):"
     
-    let sistemaAccessibility = "Nome do sistema de abastecimento"
+    let sistemaAccessibility = "Nome do sistema de abastecimento é"
     let capacidadeAccessibility = "Capacidade do sistema de abastecimento em porcentagens"
     let rainDayAccessibility = "Volume de chuva no dia em milimetros"
     let rainMonthAccessibility = "Volume de chuva acumulado no mês em milimetros"

@@ -8,5 +8,9 @@
 import Foundation
 
 struct MananciaisModel {
-    let mananciais: [MananciaisData]
+    let name: String
+    let volume: String
+    let rainDay: String
+    let rainMonth: String
+    let rainAvg: String
 }
